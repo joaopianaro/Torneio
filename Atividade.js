@@ -61,7 +61,7 @@ function main() {
         switch (opcao) {
             case 1:
                 let nomeFilme = prompt("Nome do Filme: ");
-                let data = prompt("Data (YYYY-MM-DD): ");
+                let data = prompt("Data (AAAA-MM-DD): ");
                 let hora = prompt("Hora (HH:MM): ");
                 let sala = parseInt(prompt("Número da Sala: "));
                 adicionarSessao(nomeFilme, data, hora, sala);
@@ -73,7 +73,7 @@ function main() {
                 listarSessoes();
                 let codigoAtualizar = parseInt(prompt("Digite o código da sessão a ser atualizada: "));
                 let novoNomeFilme = prompt("Novo Nome do Filme: ");
-                let novaData = prompt("Nova Data (YYYY-MM-DD): ");
+                let novaData = prompt("Nova Data (AAAA-MM-DD): ");
                 let novaHora = prompt("Nova Hora (HH:MM): ");
                 let novaSala = parseInt(prompt("Novo Número da Sala: "));
                 atualizarSessao(codigoAtualizar, novoNomeFilme, novaData, novaHora, novaSala);
